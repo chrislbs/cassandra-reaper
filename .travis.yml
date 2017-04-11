@@ -16,6 +16,7 @@ env:
 branches:
   only:
     - chrislbs/version
+    - /^v\d+\.\d+\.\d+$/
 
 services:
   - postgresql
