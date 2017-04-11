@@ -5,11 +5,14 @@ install: true
 env:
   global:
     - LOCAL_JMX=no
+    # GITHUB TOKEN
+    - secure: "04IzRrER3/TqqtbUb4J8HeoNzdu0LNF22faz4BXZEegTuJP8I0vj2m9py+1AV4AVskpVHOy1DpNesn6IufLfRlvygdmlFjOaulrMsHhZgz7bmYnBh7oza5eo49Lzexzla93xm/d3TLrD/IjLDpfqX85B6s/n3cGQZ21t/E2/oJKE2GmON+iKfGZ1TweKLrjFQn/Hu+N+EUbV86drytzyv3UO7dEgLE1fSHF+dj2fnewaAx9fzWbVguR0jnumib+uVFiJuB0zPWb47+garxBakXwi3Cmeoe9ptBlskKGsHlzmL50xi2Iej0uBotx2372p6L52PEYQz+O4QJn/4cx4yXuTfvlVuAxpZR995MsNFxrAZ7rOprmOMXMODLD0BKRvY5bGG3jd/ewybnWyuYmZ9dh9wJdGfeHsho6htuexx9x+EyQwa0D+rpuXQryizWMD4484KAY0RXhM13Gf9q/5yZ9AY0Nbs9OiHf7GXfSfRBBjVUPFQ8wEhpPQvApkqUOOWqq6DKOpxCk/EpQo01YzDDEAQUwoa7+sonISk0bxLf9U2+G/Q6PBBj6Hn0jQKfCoOnNzBqayMPA/nDGKo+EtEoiblRCXnQOOoJ+BMZ00SyDFlrf9Xo/AWfdzRCF47Dpes8M231/dOLt+4Q96GFlltOj169/LeSmZADpfPA8qtRY="
   matrix:
     - CASSANDRA_VERSION=2.1.16
     - CASSANDRA_VERSION=2.2.8
     - CASSANDRA_VERSION=3.0.9
     - CASSANDRA_VERSION=3.10
+
 services:
   - postgresql
 before_script:
