@@ -13,6 +13,10 @@ env:
     - CASSANDRA_VERSION=3.0.9
     - CASSANDRA_VERSION=3.10
 
+branches:
+  only:
+    - chrislbs/version
+
 services:
   - postgresql
 before_script:
